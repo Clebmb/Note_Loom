@@ -31,7 +31,6 @@ A modern, feature-rich journaling and note-taking application built with React a
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 
 ### Optional Features
-- **AI Integration**: Optional Gemini API integration for AI-powered features
 - **Cloud Sync**: Optional Supabase integration for cross-device synchronization
 - **Offline-First**: Full functionality without internet connection
 
@@ -80,16 +79,7 @@ If you want to sync your data across multiple devices, you can set up Supabase (
 
 **Note**: The app works perfectly without Supabase using local storage only. Supabase is only needed if you want cloud sync.
 
-### Optional: Gemini API
-
-If you want to use AI features:
-
-1. **Add to your `.env.local` file**:
-   ```bash
-   GEMINI_API_KEY=your-gemini-api-key-here
    ```
-
-2. **Get your API key** from [Google AI Studio](https://makersuite.google.com/app/apikey)
 
 ## 📦 Building for Production
 
@@ -140,13 +130,21 @@ noteloom/
 4. Optionally select a default template
 5. Click **"Create"**
 
+ ### Creating Custom Fields
+
+1. Go to the **"Custom Fields"** view
+2. Click **"New Category"** to add a new category, or **"New Field"** to dive right in.
+3. Fill out Field Name
+4. Choose Field Type
+   - Depending on Field, it will guide you through filling out more information
+5. (optionally, and if you created a category) Add it to a category (if not already on category's screen)
+6. Save and make more or create a template
+
 ### Creating Templates
 
 1. Go to the **"Templates"** view
-2. Click **"New Template"**
+2. Click **"New Template"** or browse premade
 3. Add blocks (fields) to your template:
-   - Choose from predefined field types
-   - Create custom fields with your own categories
 4. Customize colors and labels
 5. Save your template
 
@@ -161,11 +159,7 @@ noteloom/
 
 ### Exporting Data
 
-1. Go to **Settings**
-2. Navigate to the **Export** section
-3. Choose your export format (PDF or DOCX)
-4. Select the entries you want to export
-5. Download your file
+1. Don't do anything, this feature is mostly broken right now. I plan to get it working soon.
 
 ### Cloud Sync (Optional)
 
