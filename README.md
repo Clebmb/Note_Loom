@@ -2,6 +2,11 @@
 
 A modern, feature-rich journaling and note-taking application built with React and TypeScript. NoteLoom offers a flexible, customizable experience for capturing your thoughts, ideas, and memories with support for multiple journals, custom templates, and optional cloud sync.
 
+# Photos 📷
+
+![Example 1](./github/ex.png)
+![Example 2](./github/ex2.png)
+
 ![NoteLoom](https://img.shields.io/badge/NoteLoom-v1.0-blue)
 ![React](https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript)
