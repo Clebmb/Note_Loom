@@ -5273,14 +5273,15 @@ const App: FC = () => {
 
   // Effect to set initial journal view
   useEffect(() => {
-    // Don't auto-navigate if we're on the profile-manager screen
-    if (activeView === 'profile-manager') return;
+    // Don't auto-navigate if we're on screens that don't require journals
+    const viewsThatDontNeedJournals = ['profile-manager', 'templates', 'custom-fields', 'settings'];
+    if (viewsThatDontNeedJournals.includes(activeView)) return;
     
     if (!isLoadingProfiles && appState.journals.length > 0 && !activeJournalId) {
       setActiveJournalId(appState.journals[0].id);
       setActiveView('journal');
     }
-    if (!isLoadingProfiles && appState.journals.length === 0 && activeView !== 'profile-manager') {
+    if (!isLoadingProfiles && appState.journals.length === 0 && !viewsThatDontNeedJournals.includes(activeView)) {
       setActiveView('dashboard');
     }
   }, [isLoadingProfiles, appState.journals, activeJournalId, activeView]);
