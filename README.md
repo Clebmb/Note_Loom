@@ -133,7 +133,7 @@ noteloom/
  ### Creating Custom Fields
 
 1. Go to the **"Custom Fields"** view
-2. Click **"New Category" to add a new category, or "New Field" to dive right in.**
+2. Click **"New Category"** to add a new category, or **"New Field"** to dive right in.
 3. Fill out Field Name
 4. Choose Field Type
    - Depending on Field, it will guide you through filling out more information
